@@ -1,0 +1,839 @@
+﻿<!DOCTYPE html>
+<html lang='it'>
+<head>
+  <meta charset='UTF-8'>
+  <title>Elenco ricette</title>
+  <link rel='stylesheet' href='stile.css'>
+  <script src='script.js' defer></script>
+  <style>
+    body { font-family: 'Segoe UI Emoji', 'Segoe UI Symbol', 'Apple Color Emoji', 'Noto Color Emoji', sans-serif; background:#f7f7f7; margin:0; padding:0; }
+    header { background:#4fd4d8; color:#fff; padding: 1rem 0; text-align:center; font-weight:bold; font-size:1.5rem; }
+    nav { background:#fff; padding: 0.5rem 0; text-align:center; border-bottom: 1px solid #ccc; }
+    nav a { margin: 0 0.75rem; text-decoration:none; font-weight:bold; color:#4fd4d8; }
+    nav a:hover { text-decoration:underline; }
+    main { max-width: 900px; margin: 1rem auto; padding: 0 1rem; display: grid; grid-template-columns: repeat(auto-fill, minmax(260px, 1fr)); gap: 1rem; }
+    .card { background:#fff; border-radius: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.1); padding:1rem; display:flex; flex-direction: column; }
+    .card img { border-radius: 8px; width: 100%; height: 150px; object-fit: cover; margin-bottom: 0.75rem; }
+    .card h3 { color: #4fd4d8; margin: 0 0 0.3rem 0; font-size: 1.1rem; }
+    .categoria { font-size: 0.9rem; color: #666; margin-bottom: 0.5rem; }
+    .meta-ricetta { font-size: 0.85rem; color: #999; margin-top: auto; }
+    a { color: inherit; text-decoration:none; }
+    a:hover { text-decoration: underline; }
+  </style>
+</head>
+<body>
+  <header>Elenco ricette</header>
+  <nav>
+    <a href='#'>Tutte</a>
+    <a href='#'>Contorni</a>
+    <a href='#'>Dessert</a>
+    <a href='#'>Secondi</a>
+    <a href='#'>Antipasti</a>
+    <a href='#'>Impasti salati</a>
+    <a href='#'>Primi</a>
+    <a href='#'>Conserve, salse, sughi</a>
+  </nav>
+  <main>
+    <div class='card'>
+      <a href='ricetta_6425.html'>
+        <img src='img/IMG_0246-960x1259.jpg' alt='Mini parmigiane di melanzane in FA'>
+        <h3>Mini parmigiane di melanzane in FA</h3>
+      </a>
+      <div class='categoria'>Secondi</div>
+      <div class='meta-ricetta'> · </div>
+    </div>
+    <div class='card'>
+      <a href='ricetta_6424.html'>
+        <img src='img/Mozzarella-in-carrozza-nella-friggitrice-ad-aria_01.jpg' alt='Mozzarella in carrozza nella FA'>
+        <h3>Mozzarella in carrozza nella FA</h3>
+      </a>
+      <div class='categoria'>Antipasti</div>
+      <div class='meta-ricetta'> · </div>
+    </div>
+    <div class='card'>
+      <a href='ricetta_6423.html'>
+        <img src='img/IMG_6380-copia-960x720.jpg' alt='Come grigliare tante melanzane in FA'>
+        <h3>Come grigliare tante melanzane in FA</h3>
+      </a>
+      <div class='categoria'>Contorni</div>
+      <div class='meta-ricetta'> · </div>
+    </div>
+    <div class='card'>
+      <a href='ricetta_6422.html'>
+        <img src='img/IMG_2935-copia-960x720.jpg' alt='Mandorle o nocciole pralinate in FA'>
+        <h3>Mandorle o nocciole pralinate in FA</h3>
+      </a>
+      <div class='categoria'>Dessert</div>
+      <div class='meta-ricetta'>?? Da fare · </div>
+    </div>
+    <div class='card'>
+      <a href='ricetta_6421.html'>
+        <img src='img/Screenshot_20220922-091119_Facebook.jpg' alt='Pan di Spagna in FA'>
+        <h3>Pan di Spagna in FA</h3>
+      </a>
+      <div class='categoria'>Dessert</div>
+      <div class='meta-ricetta'> · </div>
+    </div>
+    <div class='card'>
+      <a href='ricetta_6420.html'>
+        <img src='img/489512267.jpg' alt='Mele cotte in FA'>
+        <h3>Mele cotte in FA</h3>
+      </a>
+      <div class='categoria'>Dessert</div>
+      <div class='meta-ricetta'> · </div>
+    </div>
+    <div class='card'>
+      <a href='ricetta_6419.html'>
+        <img src='img/Immagine 2025-09-29 183805.jpg' alt='Tortino di alici (in padella)'>
+        <h3>Tortino di alici (in padella)</h3>
+      </a>
+      <div class='categoria'>Secondi</div>
+      <div class='meta-ricetta'>?? Da fare · </div>
+    </div>
+    <div class='card'>
+      <a href='ricetta_6418.html'>
+        <img src='img/SaveClip.App_549668698.jpg' alt='Merluzzo al vapore con pomodori in due consistenze, cucunci e basilico'>
+        <h3>Merluzzo al vapore con pomodori in due consistenze, cucunci e basilico</h3>
+      </a>
+      <div class='categoria'>Secondi</div>
+      <div class='meta-ricetta'>?? Da fare · </div>
+    </div>
+    <div class='card'>
+      <a href='ricetta_6417.html'>
+        <img src='img/SaveClip.App_543816011.jpg' alt='Branzino (spigola) al vapore aromatizzato al limone con zucchine marinate'>
+        <h3>Branzino (spigola) al vapore aromatizzato al limone con zucchine marinate</h3>
+      </a>
+      <div class='categoria'>Secondi</div>
+      <div class='meta-ricetta'>?? Da fare · </div>
+    </div>
+    <div class='card'>
+      <a href='ricetta_6416.html'>
+        <img src='img/Involtini-di-zucchine-1.jpg' alt='Involtini di zucchine al forno'>
+        <h3>Involtini di zucchine al forno</h3>
+      </a>
+      <div class='categoria'>Secondi</div>
+      <div class='meta-ricetta'> · </div>
+    </div>
+    <div class='card'>
+      <a href='ricetta_6415.html'>
+        <img src='img/SaveClip.App_541624915.jpg' alt='Gunkan di zucchine, caprino e pomodori secchi'>
+        <h3>Gunkan di zucchine, caprino e pomodori secchi</h3>
+      </a>
+      <div class='categoria'>Antipasti</div>
+      <div class='meta-ricetta'> · </div>
+    </div>
+    <div class='card'>
+      <a href='ricetta_6414.html'>
+        <img src='img/Zm9yYmlkZGVuXzQ5MzE.jpg' alt='Pane da tramezzino'>
+        <h3>Pane da tramezzino</h3>
+      </a>
+      <div class='categoria'>Impasti salati</div>
+      <div class='meta-ricetta'>?? Da fare · 15h 10min</div>
+    </div>
+    <div class='card'>
+      <a href='ricetta_6413.html'>
+        <img src='img/lemon meltaways 006 copy.jpg' alt='Lemon meltaways'>
+        <h3>Lemon meltaways</h3>
+      </a>
+      <div class='categoria'>Dessert</div>
+      <div class='meta-ricetta'>?? Da fare · </div>
+    </div>
+    <div class='card'>
+      <a href='ricetta_6412.html'>
+        <img src='img/DSC_1230-2.jpg' alt='Focaccia con biga fast di Ettore Priore'>
+        <h3>Focaccia con biga fast di Ettore Priore</h3>
+      </a>
+      <div class='categoria'>Impasti salati</div>
+      <div class='meta-ricetta'>?? Da fare · 5h 30min</div>
+    </div>
+    <div class='card'>
+      <a href='ricetta_6411.html'>
+        <img src='img/panzerotti-soffici-ripieni-f5c5ac6f.jpg' alt='Panzerotti soffici ripieni'>
+        <h3>Panzerotti soffici ripieni</h3>
+      </a>
+      <div class='categoria'>Antipasti</div>
+      <div class='meta-ricetta'>?? Da fare · 2h 20min</div>
+    </div>
+    <div class='card'>
+      <a href='ricetta_6410.html'>
+        <img src='img/Immagine 2025-08-29 094435.jpg' alt='Filetto di maiale al limone e miele'>
+        <h3>Filetto di maiale al limone e miele</h3>
+      </a>
+      <div class='categoria'>Secondi</div>
+      <div class='meta-ricetta'> · </div>
+    </div>
+    <div class='card'>
+      <a href='ricetta_6409.html'>
+        <img src='img/SaveClip.App_516383948.jpg' alt='Cozze alla tarantina'>
+        <h3>Cozze alla tarantina</h3>
+      </a>
+      <div class='categoria'>Secondi</div>
+      <div class='meta-ricetta'> · </div>
+    </div>
+    <div class='card'>
+      <a href='ricetta_6408.html'>
+        <img src='img/polpette ricotta e zucchine.jpg' alt='Polpette di ricotta con zucchine ed erbe aromatiche'>
+        <h3>Polpette di ricotta con zucchine ed erbe aromatiche</h3>
+      </a>
+      <div class='categoria'>Secondi</div>
+      <div class='meta-ricetta'> · </div>
+    </div>
+    <div class='card'>
+      <a href='ricetta_6408.html'>
+        <img src='img/polpette ricotta e zucchine.jpg' alt='Polpette di ricotta con zucchine ed erbe aromatiche'>
+        <h3>Polpette di ricotta con zucchine ed erbe aromatiche</h3>
+      </a>
+      <div class='categoria'>Secondi</div>
+      <div class='meta-ricetta'> · </div>
+    </div>
+    <div class='card'>
+      <a href='ricetta_6407.html'>
+        <img src='img/Fette biscottate allo yogurt.jpg' alt='Fette biscottate allo yogurt'>
+        <h3>Fette biscottate allo yogurt</h3>
+      </a>
+      <div class='categoria'>Dessert</div>
+      <div class='meta-ricetta'>?? Da fare · 4h 30min</div>
+    </div>
+    <div class='card'>
+      <a href='ricetta_6406.html'>
+        <img src='img/spaghetti al limone.jpg' alt='Spaghetti al limone di Filippo La Mantia'>
+        <h3>Spaghetti al limone di Filippo La Mantia</h3>
+      </a>
+      <div class='categoria'>Primi</div>
+      <div class='meta-ricetta'>?? Da fare · </div>
+    </div>
+    <div class='card'>
+      <a href='ricetta_6405.html'>
+        <img src='img/SaveClip.App_517407589.jpg' alt='Biscotti al doppio cioccolato e olio di oliva'>
+        <h3>Biscotti al doppio cioccolato e olio di oliva</h3>
+      </a>
+      <div class='categoria'>Dessert</div>
+      <div class='meta-ricetta'> · </div>
+    </div>
+    <div class='card'>
+      <a href='ricetta_6404.html'>
+        <img src='img/Screenshot 2025-07-16 103408.jpg' alt='Snack di pasta fillo alla pizzaiola'>
+        <h3>Snack di pasta fillo alla pizzaiola</h3>
+      </a>
+      <div class='categoria'>Impasti salati</div>
+      <div class='meta-ricetta'> · </div>
+    </div>
+    <div class='card'>
+      <a href='ricetta_6403.html'>
+        <img src='img/SaveClip.App_520657468.jpg' alt='Tacos (ventagli) di frolla con namelaka al cioccolato'>
+        <h3>Tacos (ventagli) di frolla con namelaka al cioccolato</h3>
+      </a>
+      <div class='categoria'>Dessert</div>
+      <div class='meta-ricetta'>?? Da fare · </div>
+    </div>
+    <div class='card'>
+      <a href='ricetta_6402.html'>
+        <img src='img/SaveClip.App_503853414.jpg' alt='Latte condensato con latte vegetale (senza lattosio)'>
+        <h3>Latte condensato con latte vegetale (senza lattosio)</h3>
+      </a>
+      <div class='categoria'>Dessert</div>
+      <div class='meta-ricetta'> · </div>
+    </div>
+    <div class='card'>
+      <a href='ricetta_6401.html'>
+        <img src='img/SaveClip.App_510941225.jpg' alt='Semifreddo al lampone'>
+        <h3>Semifreddo al lampone</h3>
+      </a>
+      <div class='categoria'>Dessert</div>
+      <div class='meta-ricetta'>?? Da fare · </div>
+    </div>
+    <div class='card'>
+      <a href='ricetta_6400.html'>
+        <img src='img/coppa del nonno 2025.jpg' alt='Coppetta al caffè'>
+        <h3>Coppetta al caffè</h3>
+      </a>
+      <div class='categoria'>Dessert</div>
+      <div class='meta-ricetta'>?? Da fare · 20min</div>
+    </div>
+    <div class='card'>
+      <a href='ricetta_6399.html'>
+        <img src='img/dressing allo yogurt.jpg' alt='Dressing allo yogurt'>
+        <h3>Dressing allo yogurt</h3>
+      </a>
+      <div class='categoria'>Conserve, salse, sughi</div>
+      <div class='meta-ricetta'> · </div>
+    </div>
+    <div class='card'>
+      <a href='ricetta_6398.html'>
+        <img src='img/maionese allo yogurt senza uova.jpg' alt='Maionese allo yogurt, senza uova'>
+        <h3>Maionese allo yogurt, senza uova</h3>
+      </a>
+      <div class='categoria'>Conserve, salse, sughi</div>
+      <div class='meta-ricetta'> · </div>
+    </div>
+    <div class='card'>
+      <a href='ricetta_6397.html'>
+        <img src='img/gelato furbo al cocco.jpg' alt='Gelato furbo al cocco'>
+        <h3>Gelato furbo al cocco</h3>
+      </a>
+      <div class='categoria'>Dessert</div>
+      <div class='meta-ricetta'>?? Da fare · 6h 0min</div>
+    </div>
+    <div class='card'>
+      <a href='ricetta_6396.html'>
+        <img src='img/SaveClip.App_503504378.jpg' alt='Pita che si gonfia'>
+        <h3>Pita che si gonfia</h3>
+      </a>
+      <div class='categoria'>Impasti salati</div>
+      <div class='meta-ricetta'>?? Da fare · 2h 45min</div>
+    </div>
+    <div class='card'>
+      <a href='ricetta_6395.html'>
+        <img src='img/SaveClip.App_503909878.jpg' alt='Schiacciata di ceci'>
+        <h3>Schiacciata di ceci</h3>
+      </a>
+      <div class='categoria'>Impasti salati</div>
+      <div class='meta-ricetta'>?? Da fare · </div>
+    </div>
+    <div class='card'>
+      <a href='ricetta_6394.html'>
+        <img src='img/IMG_3223-3b.jpg' alt='Burger di melanzane'>
+        <h3>Burger di melanzane</h3>
+      </a>
+      <div class='categoria'>Secondi</div>
+      <div class='meta-ricetta'> · </div>
+    </div>
+    <div class='card'>
+      <a href='ricetta_6393.html'>
+        <img src='img/SaveClip.App_491422533.jpg' alt='Filetto di triglia (o spigola o orata) con squame di patate'>
+        <h3>Filetto di triglia (o spigola o orata) con squame di patate</h3>
+      </a>
+      <div class='categoria'>Secondi</div>
+      <div class='meta-ricetta'> · </div>
+    </div>
+    <div class='card'>
+      <a href='ricetta_6392.html'>
+        <img src='img/SaveClip.App_484163058.jpg' alt='Broccoli frisbee - Snack di broccoli'>
+        <h3>Broccoli frisbee - Snack di broccoli</h3>
+      </a>
+      <div class='categoria'>Antipasti</div>
+      <div class='meta-ricetta'> · </div>
+    </div>
+    <div class='card'>
+      <a href='ricetta_6391.html'>
+        <img src='img/SaveClip.App_484207693.jpg' alt='Pane di lenticchie senza glutine'>
+        <h3>Pane di lenticchie senza glutine</h3>
+      </a>
+      <div class='categoria'>Impasti salati</div>
+      <div class='meta-ricetta'> · 8h 30min</div>
+    </div>
+    <div class='card'>
+      <a href='ricetta_6390.html'>
+        <img src='img/481112264.jpg' alt='Sgombro marinato con pomodorini secchi'>
+        <h3>Sgombro marinato con pomodorini secchi</h3>
+      </a>
+      <div class='categoria'>Secondi</div>
+      <div class='meta-ricetta'> · </div>
+    </div>
+    <div class='card'>
+      <a href='ricetta_6389.html'>
+        <img src='img/SaveClip.App_496849360.jpg' alt='Sformato di zucchine gratinate con prosciutto e formaggio'>
+        <h3>Sformato di zucchine gratinate con prosciutto e formaggio</h3>
+      </a>
+      <div class='categoria'>Secondi</div>
+      <div class='meta-ricetta'> · </div>
+    </div>
+    <div class='card'>
+      <a href='ricetta_6388.html'>
+        <img src='img/beurre+blanc2.jpg' alt='Beurre blanc - Salsa francese al burro'>
+        <h3>Beurre blanc - Salsa francese al burro</h3>
+      </a>
+      <div class='categoria'>Conserve, salse, sughi</div>
+      <div class='meta-ricetta'>?? Da fare · </div>
+    </div>
+    <div class='card'>
+      <a href='ricetta_6387.html'>
+        <img src='img/SaveClip.App_485778539.jpg' alt='Panpandoro al latte'>
+        <h3>Panpandoro al latte</h3>
+      </a>
+      <div class='categoria'>Dessert</div>
+      <div class='meta-ricetta'>?? Da fare · 3h 0min</div>
+    </div>
+    <div class='card'>
+      <a href='ricetta_6386.html'>
+        <img src='img/SaveClip.App_491240899.jpg' alt='Pizza al formaggio'>
+        <h3>Pizza al formaggio</h3>
+      </a>
+      <div class='categoria'>Impasti salati</div>
+      <div class='meta-ricetta'>?? Da fare · 4h 30min</div>
+    </div>
+    <div class='card'>
+      <a href='ricetta_6385.html'>
+        <img src='img/SaveClip.App_479486065.jpg' alt='Crostone di pane nero con burro montato salato e acciughe'>
+        <h3>Crostone di pane nero con burro montato salato e acciughe</h3>
+      </a>
+      <div class='categoria'>Antipasti</div>
+      <div class='meta-ricetta'>?? Da fare · </div>
+    </div>
+    <div class='card'>
+      <a href='ricetta_6384.html'>
+        <img src='img/SaveClip.App_475380535.jpg' alt='Pallotte cacio e ova in bianco, salmone affumicato, avocado e maionese agli agrumi'>
+        <h3>Pallotte cacio e ova in bianco, salmone affumicato, avocado e maionese agli agrumi</h3>
+      </a>
+      <div class='categoria'>Antipasti</div>
+      <div class='meta-ricetta'>?? Da fare · </div>
+    </div>
+    <div class='card'>
+      <a href='ricetta_6383.html'>
+        <img src='img/SaveClip.App_485121485.jpg' alt='Sfere di Grana e Battuta di Manzo a Coltello'>
+        <h3>Sfere di Grana e Battuta di Manzo a Coltello</h3>
+      </a>
+      <div class='categoria'>Antipasti</div>
+      <div class='meta-ricetta'>?? Da fare · </div>
+    </div>
+    <div class='card'>
+      <a href='ricetta_6382.html'>
+        <img src='img/SaveClip.App_489099621.jpg' alt='Tacos, Salmone e Guacamole'>
+        <h3>Tacos, Salmone e Guacamole</h3>
+      </a>
+      <div class='categoria'>Antipasti</div>
+      <div class='meta-ricetta'>?? Da fare · </div>
+    </div>
+    <div class='card'>
+      <a href='ricetta_6381.html'>
+        <img src='img/SaveClip.App_482036029.jpg' alt='Crostone al burro,ricotta mantecata, limone e acciughe'>
+        <h3>Crostone al burro,ricotta mantecata, limone e acciughe</h3>
+      </a>
+      <div class='categoria'>Antipasti</div>
+      <div class='meta-ricetta'> · </div>
+    </div>
+    <div class='card'>
+      <a href='ricetta_6380.html'>
+        <img src='img/SaveClip.App_487174901.jpg' alt='Crostini al pecorino, tuorlo d&#39;uovo confit, pancetta croccante e tartufo'>
+        <h3>Crostini al pecorino, tuorlo d&#39;uovo confit, pancetta croccante e tartufo</h3>
+      </a>
+      <div class='categoria'>Antipasti</div>
+      <div class='meta-ricetta'> · </div>
+    </div>
+    <div class='card'>
+      <a href='ricetta_6379.html'>
+        <img src='img/baklava+cheesecake+bites.jpg' alt='Bocconcini di baklava al cheesecake'>
+        <h3>Bocconcini di baklava al cheesecake</h3>
+      </a>
+      <div class='categoria'>Dessert</div>
+      <div class='meta-ricetta'>?? Da fare · </div>
+    </div>
+    <div class='card'>
+      <a href='ricetta_6378.html'>
+        <img src='img/SaveClip.App_473585640.jpg' alt='Crema al mascarpone con il BY (senza uova)'>
+        <h3>Crema al mascarpone con il BY (senza uova)</h3>
+      </a>
+      <div class='categoria'>Dessert</div>
+      <div class='meta-ricetta'> · </div>
+    </div>
+    <div class='card'>
+      <a href='ricetta_6377.html'>
+        <img src='img/IMG_1107.jpg' alt='Cannoli di pasta kataifi ripieni di ricotta'>
+        <h3>Cannoli di pasta kataifi ripieni di ricotta</h3>
+      </a>
+      <div class='categoria'>Dessert</div>
+      <div class='meta-ricetta'>?? Da fare · </div>
+    </div>
+    <div class='card'>
+      <a href='ricetta_6376.html'>
+        <img src='img/IMG_4409-scaled-e1744735374608.jpg' alt='Impasto ricco per le feste (Colomba salata, panini)'>
+        <h3>Impasto ricco per le feste (Colomba salata, panini)</h3>
+      </a>
+      <div class='categoria'>Impasti salati</div>
+      <div class='meta-ricetta'>?? Da fare · 3h 0min</div>
+    </div>
+    <div class='card'>
+      <a href='ricetta_6374.html'>
+        <img src='img/La Cucina Italiana Aprile2023 - 146.jpg' alt='Pastiera semifreddo'>
+        <h3>Pastiera semifreddo</h3>
+      </a>
+      <div class='categoria'>Dessert</div>
+      <div class='meta-ricetta'> · 4h 0min</div>
+    </div>
+    <div class='card'>
+      <a href='ricetta_6373.html'>
+        <img src='img/IMG_2984.jpg' alt='Capesante all&#39;arancia'>
+        <h3>Capesante all&#39;arancia</h3>
+      </a>
+      <div class='categoria'>Secondi</div>
+      <div class='meta-ricetta'> · </div>
+    </div>
+    <div class='card'>
+      <a href='ricetta_6372.html'>
+        <img src='img/IMG_2986.jpg' alt='Maionese all in'>
+        <h3>Maionese all in</h3>
+      </a>
+      <div class='categoria'>Conserve, salse, sughi</div>
+      <div class='meta-ricetta'> · </div>
+    </div>
+    <div class='card'>
+      <a href='ricetta_6371.html'>
+        <img src='img/SaveClip.App_481371323.jpg' alt='Cestini baklava dolci di pasta fillo'>
+        <h3>Cestini baklava dolci di pasta fillo</h3>
+      </a>
+      <div class='categoria'>Dessert</div>
+      <div class='meta-ricetta'> · </div>
+    </div>
+    <div class='card'>
+      <a href='ricetta_6370.html'>
+        <img src='img/SaveClip.App_472704552.jpg' alt='Bocconcini di pane alle noci'>
+        <h3>Bocconcini di pane alle noci</h3>
+      </a>
+      <div class='categoria'>Impasti salati</div>
+      <div class='meta-ricetta'> · 4h 0min</div>
+    </div>
+    <div class='card'>
+      <a href='ricetta_6369.html'>
+        <img src='img/SaveClip.App_482854913.jpg' alt='Cheese cake montata vaniglia e clementine'>
+        <h3>Cheese cake montata vaniglia e clementine</h3>
+      </a>
+      <div class='categoria'>Dessert</div>
+      <div class='meta-ricetta'> · </div>
+    </div>
+    <div class='card'>
+      <a href='ricetta_6368.html'>
+        <img src='img/IMG_2951.jpg' alt='Salsa agrodolce'>
+        <h3>Salsa agrodolce</h3>
+      </a>
+      <div class='categoria'>Conserve, salse, sughi</div>
+      <div class='meta-ricetta'> · </div>
+    </div>
+    <div class='card'>
+      <a href='ricetta_6367.html'>
+        <img src='' alt='Salsa allo yogurt per servire la frutta'>
+        <h3>Salsa allo yogurt per servire la frutta</h3>
+      </a>
+      <div class='categoria'>Dessert</div>
+      <div class='meta-ricetta'>?? Da fare · </div>
+    </div>
+    <div class='card'>
+      <a href='ricetta_6366.html'>
+        <img src='img/20190219_115312.jpg' alt='Bianco di cottura per verdure'>
+        <h3>Bianco di cottura per verdure</h3>
+      </a>
+      <div class='categoria'>Impasti salati</div>
+      <div class='meta-ricetta'> · </div>
+    </div>
+    <div class='card'>
+      <a href='ricetta_6365.html'>
+        <img src='img/SaveClip.App_482411575.jpg' alt='Zippulas'>
+        <h3>Zippulas</h3>
+      </a>
+      <div class='categoria'>Dessert</div>
+      <div class='meta-ricetta'> · </div>
+    </div>
+    <div class='card'>
+      <a href='ricetta_6364.html'>
+        <img src='img/SaveClip.App_482263633.jpg' alt='Scorze per cannoli'>
+        <h3>Scorze per cannoli</h3>
+      </a>
+      <div class='categoria'>Dessert</div>
+      <div class='meta-ricetta'>?? Da fare · 2h 0min</div>
+    </div>
+    <div class='card'>
+      <a href='ricetta_6363.html'>
+        <img src='img/Immagine 2025-03-04 153607.jpg' alt='Gelo di limone'>
+        <h3>Gelo di limone</h3>
+      </a>
+      <div class='categoria'>Dessert</div>
+      <div class='meta-ricetta'> · 14h 0min</div>
+    </div>
+    <div class='card'>
+      <a href='ricetta_6362.html'>
+        <img src='img/SITO-.-20-Brownies-al-cioccolato-fondente.jpg' alt='Brownies soffici al cioccolato fondente (senza burro)'>
+        <h3>Brownies soffici al cioccolato fondente (senza burro)</h3>
+      </a>
+      <div class='categoria'>Dessert</div>
+      <div class='meta-ricetta'> · </div>
+    </div>
+    <div class='card'>
+      <a href='ricetta_6361.html'>
+        <img src='img/SaveClip.App_473125267.jpg' alt='Panini rustici croccanti (ricetta facilissima)'>
+        <h3>Panini rustici croccanti (ricetta facilissima)</h3>
+      </a>
+      <div class='categoria'>Impasti salati</div>
+      <div class='meta-ricetta'> · 8h 40min</div>
+    </div>
+    <div class='card'>
+      <a href='ricetta_6360.html'>
+        <img src='img/crostata-cioccolato--scaled.jpg' alt='Crema chantilly al mascarpone'>
+        <h3>Crema chantilly al mascarpone</h3>
+      </a>
+      <div class='categoria'>Dessert</div>
+      <div class='meta-ricetta'> · 6h 0min</div>
+    </div>
+    <div class='card'>
+      <a href='ricetta_6359.html'>
+        <img src='img/SaveClip.App_456852628.jpg' alt='Fagiolini soia e sesamo'>
+        <h3>Fagiolini soia e sesamo</h3>
+      </a>
+      <div class='categoria'>Contorni</div>
+      <div class='meta-ricetta'> · </div>
+    </div>
+    <div class='card'>
+      <a href='ricetta_6358.html'>
+        <img src='img/SaveClip.App_458293267.jpg' alt='Manzo al limone'>
+        <h3>Manzo al limone</h3>
+      </a>
+      <div class='categoria'>Secondi</div>
+      <div class='meta-ricetta'> · </div>
+    </div>
+    <div class='card'>
+      <a href='ricetta_6357.html'>
+        <img src='img/SaveClip.App_474036557.jpg' alt='Crema all&#39;arancia senza uova'>
+        <h3>Crema all&#39;arancia senza uova</h3>
+      </a>
+      <div class='categoria'>Dessert</div>
+      <div class='meta-ricetta'> · </div>
+    </div>
+    <div class='card'>
+      <a href='ricetta_6356.html'>
+        <img src='img/SaveClip.App_457258597.jpg' alt='Lemon curd senza burro'>
+        <h3>Lemon curd senza burro</h3>
+      </a>
+      <div class='categoria'>Dessert</div>
+      <div class='meta-ricetta'> · </div>
+    </div>
+    <div class='card'>
+      <a href='ricetta_6355.html'>
+        <img src='img/Immagine 2025-03-03 120037.jpg' alt='Millefoglie di mele con crema chantilly'>
+        <h3>Millefoglie di mele con crema chantilly</h3>
+      </a>
+      <div class='categoria'>Dessert</div>
+      <div class='meta-ricetta'> · </div>
+    </div>
+    <div class='card'>
+      <a href='ricetta_6354.html'>
+        <img src='img/filetti-di-cefalo-in-padella.jpg' alt='Filetti di cefalo in padella'>
+        <h3>Filetti di cefalo in padella</h3>
+      </a>
+      <div class='categoria'>Secondi</div>
+      <div class='meta-ricetta'> · </div>
+    </div>
+    <div class='card'>
+      <a href='ricetta_6353.html'>
+        <img src='img/SaveClip.App_472434209.jpg' alt='Biove'>
+        <h3>Biove</h3>
+      </a>
+      <div class='categoria'>Impasti salati</div>
+      <div class='meta-ricetta'> · 16h 0min</div>
+    </div>
+    <div class='card'>
+      <a href='ricetta_6352.html'>
+        <img src='img/SaveClip.App_480466967.jpg' alt='Glassa neutra'>
+        <h3>Glassa neutra</h3>
+      </a>
+      <div class='categoria'>Dessert</div>
+      <div class='meta-ricetta'> · </div>
+    </div>
+    <div class='card'>
+      <a href='ricetta_6352.html'>
+        <img src='img/SaveClip.App_480466967.jpg' alt='Glassa neutra'>
+        <h3>Glassa neutra</h3>
+      </a>
+      <div class='categoria'>Dessert</div>
+      <div class='meta-ricetta'> · </div>
+    </div>
+    <div class='card'>
+      <a href='ricetta_6351.html'>
+        <img src='img/SaveClip.App_481580163.jpg' alt='Pain au chocolat con sfogliatura facile e veloce'>
+        <h3>Pain au chocolat con sfogliatura facile e veloce</h3>
+      </a>
+      <div class='categoria'>Dessert</div>
+      <div class='meta-ricetta'> · 5h 0min</div>
+    </div>
+    <div class='card'>
+      <a href='ricetta_6350.html'>
+        <img src='img/semifreddo-mascarpone-servito.jpg' alt='Semifreddo al mascarpone'>
+        <h3>Semifreddo al mascarpone</h3>
+      </a>
+      <div class='categoria'>Dessert</div>
+      <div class='meta-ricetta'>?? Da fare · </div>
+    </div>
+    <div class='card'>
+      <a href='ricetta_6349.html'>
+        <img src='img/SaveClip.App_449447809.jpg' alt='Torta salata con pasta fillo che rimane croccante'>
+        <h3>Torta salata con pasta fillo che rimane croccante</h3>
+      </a>
+      <div class='categoria'>Impasti salati</div>
+      <div class='meta-ricetta'> · </div>
+    </div>
+    <div class='card'>
+      <a href='ricetta_6348.html'>
+        <img src='img/Immagine 2025-02-21 111710.jpg' alt='Versione semplificata del byrek'>
+        <h3>Versione semplificata del byrek</h3>
+      </a>
+      <div class='categoria'>Impasti salati</div>
+      <div class='meta-ricetta'>?? Da fare · </div>
+    </div>
+    <div class='card'>
+      <a href='ricetta_6347.html'>
+        <img src='img/Immagine 2025-02-21 101652.jpg' alt='Crema di avocado'>
+        <h3>Crema di avocado</h3>
+      </a>
+      <div class='categoria'>Antipasti</div>
+      <div class='meta-ricetta'> · </div>
+    </div>
+    <div class='card'>
+      <a href='ricetta_6346.html'>
+        <img src='img/zuppa-di-ceci-e-finocchi.jpg' alt='Zuppa di ceci con verza e finocchio'>
+        <h3>Zuppa di ceci con verza e finocchio</h3>
+      </a>
+      <div class='categoria'>Primi</div>
+      <div class='meta-ricetta'> · </div>
+    </div>
+    <div class='card'>
+      <a href='ricetta_6345.html'>
+        <img src='img/1445Mod.jpg' alt='Riso per sushi'>
+        <h3>Riso per sushi</h3>
+      </a>
+      <div class='categoria'>Impasti salati</div>
+      <div class='meta-ricetta'>?? Da fare · 45min</div>
+    </div>
+    <div class='card'>
+      <a href='ricetta_6343.html'>
+        <img src='img/IMG_8085.jpg' alt='Petto di pollo marinato con yogurt greco, curcuma e limone'>
+        <h3>Petto di pollo marinato con yogurt greco, curcuma e limone</h3>
+      </a>
+      <div class='categoria'>Secondi</div>
+      <div class='meta-ricetta'> · 30min</div>
+    </div>
+    <div class='card'>
+      <a href='ricetta_6342.html'>
+        <img src='img/saveinsta.cc-L9dT96Jt.jpg' alt='Focaccia byrek'>
+        <h3>Focaccia byrek</h3>
+      </a>
+      <div class='categoria'>Impasti salati</div>
+      <div class='meta-ricetta'> · 2h 0min</div>
+    </div>
+    <div class='card'>
+      <a href='ricetta_6341.html'>
+        <img src='img/saveinsta.cc-p4w2JPwx.jpg' alt='Cotoletta di melanzana'>
+        <h3>Cotoletta di melanzana</h3>
+      </a>
+      <div class='categoria'>Secondi</div>
+      <div class='meta-ricetta'> · </div>
+    </div>
+    <div class='card'>
+      <a href='ricetta_6340.html'>
+        <img src='img/saveinsta.cc-nIJRSRl4.jpg' alt='Stinco di maiale alla birra'>
+        <h3>Stinco di maiale alla birra</h3>
+      </a>
+      <div class='categoria'>Secondi</div>
+      <div class='meta-ricetta'>?? Da fare · 2h 40min</div>
+    </div>
+    <div class='card'>
+      <a href='ricetta_6339.html'>
+        <img src='img/saveinsta.cc-vKF9BGWT.jpg' alt='Sformato di zucchine'>
+        <h3>Sformato di zucchine</h3>
+      </a>
+      <div class='categoria'>Secondi</div>
+      <div class='meta-ricetta'> · 20min</div>
+    </div>
+    <div class='card'>
+      <a href='ricetta_6338.html'>
+        <img src='img/Uovo confit e carbonara.jpg' alt='Uovo confit e crostino alla carbonara'>
+        <h3>Uovo confit e crostino alla carbonara</h3>
+      </a>
+      <div class='categoria'>Antipasti</div>
+      <div class='meta-ricetta'> · </div>
+    </div>
+    <div class='card'>
+      <a href='ricetta_6338.html'>
+        <img src='img/Uovo confit e carbonara.jpg' alt='Uovo confit e crostino alla carbonara'>
+        <h3>Uovo confit e crostino alla carbonara</h3>
+      </a>
+      <div class='categoria'>Secondi</div>
+      <div class='meta-ricetta'> · </div>
+    </div>
+    <div class='card'>
+      <a href='ricetta_6337.html'>
+        <img src='img/IMG_6044-960x1440.jpg' alt='Chiacchiere: leggere, croccanti e super bollose'>
+        <h3>Chiacchiere: leggere, croccanti e super bollose</h3>
+      </a>
+      <div class='categoria'>Dessert</div>
+      <div class='meta-ricetta'>?? Da fare · </div>
+    </div>
+    <div class='card'>
+      <a href='ricetta_6336.html'>
+        <img src='img/saveinsta.cc-LdEE0m80.jpg' alt='Pasta cozze e pomodoro'>
+        <h3>Pasta cozze e pomodoro</h3>
+      </a>
+      <div class='categoria'>Primi</div>
+      <div class='meta-ricetta'> · </div>
+    </div>
+    <div class='card'>
+      <a href='ricetta_6335.html'>
+        <img src='img/saveinsta.cc-6EdrOK1Q.jpg' alt='Torta pistacchiosa'>
+        <h3>Torta pistacchiosa</h3>
+      </a>
+      <div class='categoria'>Dessert</div>
+      <div class='meta-ricetta'>?? Da fare · </div>
+    </div>
+    <div class='card'>
+      <a href='ricetta_6334.html'>
+        <img src='img/crema-all-arancia-senza-uova-.jpg' alt='Crema all&#39;arancia senza uova (senza latte)'>
+        <h3>Crema all&#39;arancia senza uova (senza latte)</h3>
+      </a>
+      <div class='categoria'>Dessert</div>
+      <div class='meta-ricetta'>?? Da fare · </div>
+    </div>
+    <div class='card'>
+      <a href='ricetta_6333.html'>
+        <img src='img/SaveClip.App_404918426.jpg' alt='Panna cotta salata alla zucca con pancetta croccante e Aceto Balsamico'>
+        <h3>Panna cotta salata alla zucca con pancetta croccante e Aceto Balsamico</h3>
+      </a>
+      <div class='categoria'>Antipasti</div>
+      <div class='meta-ricetta'> · </div>
+    </div>
+    <div class='card'>
+      <a href='ricetta_6332.html'>
+        <img src='img/SaveClip.App_458281882.jpg' alt='Spaghetti al pomodoro'>
+        <h3>Spaghetti al pomodoro</h3>
+      </a>
+      <div class='categoria'>Primi</div>
+      <div class='meta-ricetta'> · </div>
+    </div>
+    <div class='card'>
+      <a href='ricetta_6331.html'>
+        <img src='img/SaveClip.App_443264912.jpg' alt='Torta salata con pasta fillo, zucchine e mascarpone'>
+        <h3>Torta salata con pasta fillo, zucchine e mascarpone</h3>
+      </a>
+      <div class='categoria'>Impasti salati</div>
+      <div class='meta-ricetta'> · </div>
+    </div>
+    <div class='card'>
+      <a href='ricetta_6330.html'>
+        <img src='img/polpette di verdure.jpg' alt='Polpette di verdure'>
+        <h3>Polpette di verdure</h3>
+      </a>
+      <div class='categoria'>Secondi</div>
+      <div class='meta-ricetta'>?? Da fare · </div>
+    </div>
+    <div class='card'>
+      <a href='ricetta_6329.html'>
+        <img src='img/mini roll di salmone.jpg' alt='Roll di salmone'>
+        <h3>Roll di salmone</h3>
+      </a>
+      <div class='categoria'>Antipasti</div>
+      <div class='meta-ricetta'> · </div>
+    </div>
+    <div class='card'>
+      <a href='ricetta_6328.html'>
+        <img src='img/torta salata con fillo e verdure.jpg' alt='Torta salata di pasta fillo con verdure di stagione'>
+        <h3>Torta salata di pasta fillo con verdure di stagione</h3>
+      </a>
+      <div class='categoria'>Impasti salati</div>
+      <div class='meta-ricetta'> · </div>
+    </div>
+    <div class='card'>
+      <a href='ricetta_6327.html'>
+        <img src='img/panini morbidi.jpg' alt='Panini morbidissimi pronti in 2 ore'>
+        <h3>Panini morbidissimi pronti in 2 ore</h3>
+      </a>
+      <div class='categoria'>Impasti salati</div>
+      <div class='meta-ricetta'> · 2h 0min</div>
+    </div>
+  </main>
+</body>
+</html>
